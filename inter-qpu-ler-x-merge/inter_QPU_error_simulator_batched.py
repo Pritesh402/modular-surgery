@@ -97,9 +97,14 @@ def make_override_pairs(number_string):
 # override_pairs_d9_alternating_LS_on_different_QPU = make_override_pairs("666 648 667 649 668 650 669 651 670 652 671 653 672 654 673 655 674 656 675")
 
 # xmerge left, d5
-override_pairs_d5_bell_LS_on_different_QPU = make_override_pairs("290 300 300 314 300 301 291 301 301 315 292 302 302 316 302 303 293 303 303 317 294 304 304 318 304 305 295 305 305 319 296 306 306 320 307 306 307 321 297 308 298 309 299 310")
-override_pairs_d5_interleaving_LS_on_different_QPU = make_override_pairs("406 392 407 393 408 394 409 395 410 396 411 397 412 398 413")
-override_pairs_d5_alternating_LS_on_different_QPU = make_override_pairs("406 392 407 393 408 394 409 395 410 396 411 397 412 398 413")
+# override_pairs_d5_bell_LS_on_different_QPU = make_override_pairs("290 300 300 314 300 301 291 301 301 315 292 302 302 316 302 303 293 303 303 317 294 304 304 318 304 305 295 305 305 319 296 306 306 320 307 306 307 321 297 308 298 309 299 310")
+# override_pairs_d5_interleaving_LS_on_different_QPU = make_override_pairs("406 392 407 393 408 394 409 395 410 396 411 397 412 398 413")
+# override_pairs_d5_alternating_LS_on_different_QPU = make_override_pairs("406 392 407 393 408 394 409 395 410 396 411 397 412 398 413")
+
+# xmerge left, d7
+override_pairs_d7_bell_LS_on_different_QPU = make_override_pairs("290 300 300 314 300 301 291 301 301 315 292 302 302 316 302 303 293 303 303 317 294 304 304 318 304 305 295 305 305 319 296 306 306 320 307 306 307 321 297 308 298 309 299 310")
+override_pairs_d7_interleaving_LS_on_different_QPU = make_override_pairs("406 392 407 393 408 394 409 395 410 396 411 397 412 398 413")
+override_pairs_d7_alternating_LS_on_different_QPU = make_override_pairs("406 392 407 393 408 394 409 395 410 396 411 397 412 398 413")
 
 def make_override_edges(override_pairs_raw):
     override_edges = set()
@@ -523,7 +528,7 @@ def _simulate_point(job):
 #       ...
 
 DATA_DIR = os.path.join(SCRIPT_DIR, "data")
-COMBINED_CSV = os.path.join(DATA_DIR, "xmerge_d5_all_series.csv")
+COMBINED_CSV = os.path.join(DATA_DIR, "xmerge_d7_all_series.csv")
 
 # Saved points are matched to requested ones by rounded x, so the tiny float
 # wobble from np.linspace never causes a redundant re-run.
@@ -535,34 +540,34 @@ X_DECIMALS = 12
 SERIES = [
     {
         "name": "bell",
-        "key": "xmerge_d5_bell",
+        "key": "xmerge_d7_bell",
         "label": "bell (ours)",
-        "title": "d5 108-Bell LS across different QPUs",
-        "circuit_file": "x_merge_d5_bell.stim",
-        "override_pairs": override_pairs_d5_bell_LS_on_different_QPU,
+        "title": "d7 108-Bell LS across different QPUs",
+        "circuit_file": "x_merge_d7_bell.stim",
+        "override_pairs": override_pairs_d7_bell_LS_on_different_QPU,
         "marker": "^",
     },
     {
         "name": "interleaving",
-        "key": "xmerge_d5_interleaving",
+        "key": "xmerge_d7_interleaving",
         "label": "interleaving",
-        "title": "d5 108-Interleaving LS across different QPUs",
-        "circuit_file": "x_merge_d5_interleaving.stim",
-        "override_pairs": override_pairs_d5_interleaving_LS_on_different_QPU,
+        "title": "d7 108-Interleaving LS across different QPUs",
+        "circuit_file": "x_merge_d7_interleaving.stim",
+        "override_pairs": override_pairs_d7_interleaving_LS_on_different_QPU,
         "marker": "v",
     },
     {
         "name": "alternating",
-        "key": "xmerge_d5_alternating",
+        "key": "xmerge_d7_alternating",
         "label": "alternating",
-        "title": "d5-Alternating LS across different QPUs",
-        "circuit_file": "x_merge_d5_alternating.stim",
-        "override_pairs": override_pairs_d5_alternating_LS_on_different_QPU,
+        "title": "d7-Alternating LS across different QPUs",
+        "circuit_file": "x_merge_d7_alternating.stim",
+        "override_pairs": override_pairs_d7_alternating_LS_on_different_QPU,
         "marker": "<",
     },
 ]
 
-PLOT_TITLE = r"Cross shaped junnction merge across different QPUs ($d=5$)"
+PLOT_TITLE = r"Cross shaped junnction merge across different QPUs ($d=7$)"
 X_LABEL = "Inter-QPU link error rate"
 Y_LABEL = "Logical error rate per shot"
 
