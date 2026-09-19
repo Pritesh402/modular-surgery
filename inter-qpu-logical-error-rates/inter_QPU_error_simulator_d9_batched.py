@@ -81,9 +81,9 @@ def make_override_pairs(number_string):
 # override_pairs_d5_alternating_LS_on_different_QPU = make_override_pairs("215 204 214 203 213 202 212 201 211 200 210")
 
 # d7, left boundary only
-# override_pairs_d7_bell_LS_on_different_QPU = make_override_pairs("290 300 300 314 300 301 291 301 301 315 292 302 302 316 302 303 293 303 303 317 294 304 304 318 304 305 295 305 305 319 296 306 306 320 307 306 307 321 297 308 298 309 299 310")
-# override_pairs_d7_interleaving_LS_on_different_QPU = make_override_pairs("406 392 407 393 408 394 409 395 410 396 411 397 412 398 413")
-# override_pairs_d7_alternating_LS_on_different_QPU = make_override_pairs("406 392 407 393 408 394 409 395 410 396 411 397 412 398 413")
+override_pairs_d7_bell_LS_on_different_QPU = make_override_pairs("290 300 300 314 300 301 291 301 301 315 292 302 302 316 302 303 293 303 303 317 294 304 304 318 304 305 295 305 305 319 296 306 306 320 307 306 307 321 297 308 298 309 299 310")
+override_pairs_d7_interleaving_LS_on_different_QPU = make_override_pairs("406 392 407 393 408 394 409 395 410 396 411 397 412 398 413")
+override_pairs_d7_alternating_LS_on_different_QPU = make_override_pairs("406 392 407 393 408 394 409 395 410 396 411 397 412 398 413")
 
 
 # # d3, left boundary only
@@ -92,9 +92,9 @@ def make_override_pairs(number_string):
 # override_pairs_d3_alternating_LS_on_different_QPU = make_override_pairs("78 72 79 73 80 74 81")
 
 # d9, left boundary only
-override_pairs_d9_bell_LS_on_different_QPU = make_override_pairs("481 494 494 512 494 495 482 495 495 513  483 496 496 514 496 497 484 497 497 515 485 498 498 516 498 499 486 499 499 517 487 500 500 518 500 501 488 501 501 519 489 502 502 520 502 503 503 521 490 504 491 505 492 506 493 507")
-override_pairs_d9_interleaving_LS_on_different_QPU = make_override_pairs("666 648 667 649 668 650 669 651 670 652 671 653 672 654 673 655 674 656 675")
-override_pairs_d9_alternating_LS_on_different_QPU = make_override_pairs("666 648 667 649 668 650 669 651 670 652 671 653 672 654 673 655 674 656 675")
+# override_pairs_d9_bell_LS_on_different_QPU = make_override_pairs("481 494 494 512 494 495 482 495 495 513  483 496 496 514 496 497 484 497 497 515 485 498 498 516 498 499 486 499 499 517 487 500 500 518 500 501 488 501 501 519 489 502 502 520 502 503 503 521 490 504 491 505 492 506 493 507")
+# override_pairs_d9_interleaving_LS_on_different_QPU = make_override_pairs("666 648 667 649 668 650 669 651 670 652 671 653 672 654 673 655 674 656 675")
+# override_pairs_d9_alternating_LS_on_different_QPU = make_override_pairs("666 648 667 649 668 650 669 651 670 652 671 653 672 654 673 655 674 656 675")
 
 def make_override_edges(override_pairs_raw):
     override_edges = set()
@@ -518,7 +518,7 @@ def _simulate_point(job):
 #       ...
 
 DATA_DIR = os.path.join(SCRIPT_DIR, "data")
-COMBINED_CSV = os.path.join(DATA_DIR, "pauliXX_d9_all_series.csv")
+COMBINED_CSV = os.path.join(DATA_DIR, "pauliXX_d7_all_series_108.csv")
 
 # Saved points are matched to requested ones by rounded x, so the tiny float
 # wobble from np.linspace never causes a redundant re-run.
@@ -530,34 +530,34 @@ X_DECIMALS = 12
 SERIES = [
     {
         "name": "bell",
-        "key": "pauliXX_d9_bell",
+        "key": "pauliXX_d7_bell_108",
         "label": "bell (ours)",
-        "title": "d9-Bell LS across different QPUs",
-        "circuit_file": "pauliXX_d9_bell.stim",
-        "override_pairs": override_pairs_d9_bell_LS_on_different_QPU,
+        "title": "d7 108-Bell LS across different QPUs",
+        "circuit_file": "pauliXX_d7_bell.stim",
+        "override_pairs": override_pairs_d7_bell_LS_on_different_QPU,
         "marker": "^",
     },
     {
         "name": "interleaving",
-        "key": "pauliXX_d9_interleaving",
+        "key": "pauliXX_d7_interleaving_108",
         "label": "interleaving",
-        "title": "d9-Interleaving LS across different QPUs",
-        "circuit_file": "pauliXX_d9_interleaving.stim",
-        "override_pairs": override_pairs_d9_interleaving_LS_on_different_QPU,
+        "title": "d7 108-Interleaving LS across different QPUs",
+        "circuit_file": "pauliXX_d7_interleaving.stim",
+        "override_pairs": override_pairs_d7_interleaving_LS_on_different_QPU,
         "marker": "v",
     },
     {
         "name": "alternating",
-        "key": "pauliXX_d9_alternating",
+        "key": "pauliXX_d9_alternating_108",
         "label": "alternating",
-        "title": "d9-Alternating LS across different QPUs",
-        "circuit_file": "pauliXX_d9_alternating.stim",
-        "override_pairs": override_pairs_d9_alternating_LS_on_different_QPU,
+        "title": "d7-Alternating LS across different QPUs",
+        "circuit_file": "pauliXX_d7_alternating.stim",
+        "override_pairs": override_pairs_d7_alternating_LS_on_different_QPU,
         "marker": "<",
     },
 ]
 
-PLOT_TITLE = r"Pauli-XX measurement across different QPUs ($d=9$)"
+PLOT_TITLE = r"Pauli-XX measurement across different QPUs ($d=7$)"
 X_LABEL = "Inter-QPU link error rate"
 Y_LABEL = "Logical error rate per shot"
 
