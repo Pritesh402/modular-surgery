@@ -1,0 +1,20 @@
+
+========================================================================
+x-merge-bell-d7_graphlike_elementary.stim
+========================================================================
+  detectors 2144   observables 3   measurements 2545   qubits 557
+  noiseless determinism (no gauge)  : PASS
+  rank(det) 2144/2144   rank(det+obs) 2145   deterministic dim D 2145
+  DEPENDENCIES = rank(det)+n_obs-rank(det+obs) = 2   <-- OBSERVABLE-COSET DETECTORS; distance is inflated
+  SLACK = D - rank(det+obs) = 0   (maximal)
+  single-Pauli faults 10882   degree hist {1: 565, 2: 9716, 3: 545, 4: 56}
+  NON-GRAPHLIKE faults : 601
+  median column weight 10;  OUTLIERS (>3x median): 4
+  outlier coverage of non-graphlike faults: 601/601  (100%)
+  top outliers (detector, col weight, rec weight, span, coord, tick):
+    D2141   col=224   rec=39   span=2406   (25.0, 9.0) t=82
+    D2140   col=203   rec=33   span=2394   (25.0, 9.0) t=82
+    D2139   col=196   rec=19   span=131    (10.0, 23.0) t=82
+    D2143   col=196   rec=25   span=2395   (25.0, 9.0) t=82
+  decompose_errors=True             : FAIL The error component that failed to decompose is 'D10, D12, D
+  shortest_graphlike_error          : 7

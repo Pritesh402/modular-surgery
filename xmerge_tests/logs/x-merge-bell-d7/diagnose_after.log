@@ -1,0 +1,13 @@
+
+========================================================================
+x-merge-bell-d7_fixed.stim
+========================================================================
+  detectors 2142   observables 3   measurements 2545   qubits 557
+  noiseless determinism (no gauge)  : PASS
+  rank(det) 2142/2142   rank(det+obs) 2145   deterministic dim D 2145
+  DEPENDENCIES = rank(det)+n_obs-rank(det+obs) = 0   (healthy)
+  SLACK = D - rank(det+obs) = 0   (maximal)
+  single-Pauli faults 10882   degree hist {1: 710, 2: 10172}
+  NON-GRAPHLIKE faults : 0
+  decompose_errors=True             : PASS (42849 errors)
+  shortest_graphlike_error          : 6

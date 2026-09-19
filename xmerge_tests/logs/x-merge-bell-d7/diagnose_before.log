@@ -1,0 +1,44 @@
+
+========================================================================
+.\x-merge-bell-d7_annotated.stim
+========================================================================
+  detectors 2235   observables 3   measurements 2545   qubits 557
+  noiseless determinism (no gauge)  : PASS
+  rank(det) 2144/2235   rank(det+obs) 2145   deterministic dim D 2145
+  DEPENDENCIES = rank(det)+n_obs-rank(det+obs) = 2   <-- OBSERVABLE-COSET DETECTORS; distance is inflated
+  SLACK = D - rank(det+obs) = 0   (maximal)
+  NOTE: 91 detector(s) are linearly dependent on the others
+  single-Pauli faults 10882   degree hist {1: 607, 2: 8541, 3: 378, 4: 607, 5: 393, 6: 106, 7: 75, 8: 77, 9: 39, 10: 38, 11: 14, 13: 3, 15: 2, 17: 2}
+  NON-GRAPHLIKE faults : 1734
+  median column weight 11;  OUTLIERS (>3x median): 36
+  outlier coverage of non-graphlike faults: 1269/1734  (73%)
+    -> residual basis artifacts remain; run graphlike_basis.py /
+       elementary_basis.py BEFORE logical_detector_fix.py
+  top outliers (detector, col weight, rec weight, span, coord, tick):
+    D2232   col=337   rec=17   span=359    (18.0, 12.0) t=82
+    D2233   col=337   rec=17   span=360    (18.0, 14.0) t=82
+    D2231   col=329   rec=17   span=358    (18.0, 10.0) t=82
+    D2234   col=234   rec=17   span=406    (25.0, 9.0) t=82
+    D2230   col=196   rec=16   span=78     (10.0, 23.0) t=82
+    D2178   col=148   rec=2    span=91     (18.5, 10.5) t=81
+    D2179   col=148   rec=2    span=98     (18.5, 12.5) t=81
+    D2175   col=129   rec=2    span=91     (18.5, 10.5) t=71
+    D2176   col=129   rec=2    span=98     (18.5, 12.5) t=71
+    D2180   col=118   rec=2    span=105    (18.5, 14.5) t=81
+    D2172   col=110   rec=2    span=91     (18.5, 10.5) t=61
+    D2173   col=110   rec=2    span=98     (18.5, 12.5) t=61
+    D2177   col=102   rec=2    span=105    (18.5, 14.5) t=71
+    D2169   col=91    rec=2    span=91     (18.5, 10.5) t=51
+    D2170   col=91    rec=2    span=98     (18.5, 12.5) t=51
+    D2174   col=88    rec=2    span=105    (18.5, 14.5) t=61
+    D2166   col=72    rec=2    span=91     (18.5, 10.5) t=41
+    D2167   col=72    rec=2    span=98     (18.5, 12.5) t=41
+    D2171   col=72    rec=2    span=105    (18.5, 14.5) t=51
+    D2228   col=72    rec=16   span=1992   (17.0, 10.0) t=81
+    D2229   col=72    rec=16   span=1992   (17.0, 12.0) t=81
+    D2223   col=66    rec=10   span=1992   (17.0, 14.0) t=81
+    D2226   col=63    rec=14   span=1708   (17.0, 10.0) t=71
+    D2227   col=63    rec=14   span=1708   (17.0, 12.0) t=71
+    D2168   col=58    rec=2    span=105    (18.5, 14.5) t=41
+  decompose_errors=True             : FAIL The 4 basis error cases (e.g. X, Z) used to form the combine
+  shortest_graphlike_error          : 7

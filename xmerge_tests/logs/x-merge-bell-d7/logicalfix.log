@@ -1,0 +1,15 @@
+  input: 2144 detectors, 3 observables, 2545 measurements
+  single-Pauli faults 10882;  non-graphlike 601
+  median column weight 10; flagged outliers [(2141, 224), (2140, 203), (2139, 196), (2143, 196)]
+  non-graphlike faults touching a flagged detector: 601/601
+  enumerating 10 combination(s) up to order 2
+    D2141^D2140 -> local check (column weight 9, 5 records)
+    D2140^D2143 -> local check (column weight 8, 5 records)
+  recovered 2 genuine local check(s); dropping 2 observable-coset detector(s)
+  wrote x-merge-bell-d7_fixed.stim: 2142 detectors, 3 observables
+  noiseless determinism (no gauge)              : PASS
+  rank(det)=2142/2142  rank(det+obs)=2145  deterministic dim=2145  slack=0
+  observables independent of detector span      : PASS
+  decompose_errors=True (MWPM-ready)            : PASS (42849 errors)
+  distance: shortest_graphlike=6  search_for_undetectable=skipped
+  (pass --hyperedge for the undetectable-error cross-check; it is memory-hungry and OOMs at d7+)
