@@ -1,0 +1,18 @@
+
+========================================================================
+xmerge_d9_bell_fixed.stim
+========================================================================
+  detectors 4206   observables 3   measurements 5001   qubits 897
+  noiseless determinism (no gauge)  : PASS
+  rank(det) 4206/4206   rank(det+obs) 4209   deterministic dim D 4225
+  DEPENDENCIES = rank(det)+n_obs-rank(det+obs) = 0   (healthy)
+  SLACK = D - rank(det+obs) = 16   (annotation incomplete: missed parities)
+  single-Pauli faults 22096   degree hist {1: 1143, 2: 20890, 3: 50, 4: 12, 5: 1}
+  NON-GRAPHLIKE faults : 63
+  median column weight 12;  OUTLIERS (>3x median): 0
+  outlier coverage of non-graphlike faults: 0/63  (0%)
+    -> residual basis artifacts remain; run graphlike_basis.py /
+       elementary_basis.py BEFORE logical_detector_fix.py
+  top outliers (detector, col weight, rec weight, span, coord, tick):
+  decompose_errors=True             : PASS (86388 errors)
+  shortest_graphlike_error          : 6

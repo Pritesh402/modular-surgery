@@ -1,0 +1,39 @@
+
+========================================================================
+xmerge_d9_bell_graphlike_elementary.stim
+========================================================================
+  detectors 4224   observables 3   measurements 5001   qubits 897
+  noiseless determinism (no gauge)  : PASS
+  rank(det) 4224/4224   rank(det+obs) 4225   deterministic dim D 4225
+  DEPENDENCIES = rank(det)+n_obs-rank(det+obs) = 2   <-- OBSERVABLE-COSET DETECTORS; distance is inflated
+  SLACK = D - rank(det+obs) = 0   (maximal)
+  single-Pauli faults 22297   degree hist {1: 939, 2: 20068, 3: 1060, 4: 102, 5: 76, 6: 35, 7: 10, 8: 7}
+  NON-GRAPHLIKE faults : 1290
+  median column weight 12;  OUTLIERS (>3x median): 21
+  outlier coverage of non-graphlike faults: 1263/1290  (97%)
+    -> residual basis artifacts remain; run graphlike_basis.py /
+       elementary_basis.py BEFORE logical_detector_fix.py
+  top outliers (detector, col weight, rec weight, span, coord, tick):
+    D4213   col=370   rec=65   span=4697   (23.0, 13.0) t=102
+    D4212   col=353   rec=57   span=4681   (23.0, 12.0) t=102
+    D4221   col=347   rec=51   span=4682   (23.0, 12.0) t=102
+    D4210   col=315   rec=23   span=199    (12.0, 29.0) t=102
+    D4219   col=64    rec=18   span=4569   (26.0, 12.0) t=102
+    D4189   col=49    rec=16   span=2728   (23.5, 11.5) t=71
+    D4201   col=49    rec=16   span=2728   (23.5, 11.5) t=91
+    D4223   col=49    rec=19   span=2722   (24.0, 12.0) t=102
+    D4107   col=48    rec=12   span=4601   (30.0, 11.0) t=102
+    D4199   col=48    rec=12   span=4585   (28.0, 11.0) t=102
+    D4216   col=48    rec=12   span=4569   (26.0, 11.0) t=102
+    D4195   col=44    rec=12   span=1366   (26.5, 11.5) t=51
+    D4200   col=44    rec=12   span=1366   (26.5, 11.5) t=71
+    D4204   col=44    rec=12   span=1366   (26.5, 11.5) t=91
+    D4169   col=43    rec=17   span=916    (31.5, 11.5) t=31
+    D4173   col=42    rec=16   span=1816   (23.5, 11.5) t=51
+    D4158   col=41    rec=11   span=4601   (30.0, 12.0) t=102
+    D4177   col=41    rec=14   span=1824   (31.5, 11.5) t=51
+    D4181   col=41    rec=14   span=1824   (31.5, 11.5) t=71
+    D4185   col=41    rec=14   span=1824   (31.5, 11.5) t=91
+    D4207   col=38    rec=12   span=4593   (29.0, 11.0) t=102
+  decompose_errors=True             : FAIL The error component that failed to decompose is 'D13, D16, D
+  shortest_graphlike_error          : 9

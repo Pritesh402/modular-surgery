@@ -1,0 +1,19 @@
+  input: 4224 detectors, 3 observables, 5001 measurements
+  single-Pauli faults 22297;  non-graphlike 1290
+  median column weight 12; flagged outliers [(4213, 370), (4212, 353), (4221, 347), (4210, 315), (4219, 64), (4189, 49), (4201, 49), (4223, 49), (4107, 48), (4199, 48), (4216, 48), (4195, 44), (4200, 44), (4204, 44), (4169, 43), (4173, 42), (4158, 41), (4177, 41), (4181, 41), (4185, 41), (4207, 38)]
+  non-graphlike faults touching a flagged detector: 1263/1290
+  WARNING: 27 non-graphlike fault(s) touch NO outlier.  Those are ordinary basis artifacts, not logical cosets --
+  run graphlike_basis.py / elementary_basis.py FIRST, then re-run this.
+  enumerating 231 combination(s) up to order 2
+    D4213^D4212 -> local check (column weight 9, 5 records)
+    D4213^D4221 -> local check (column weight 16, 10 records)
+    D4212^D4221 -> local check (column weight 7, 5 records)
+    D4169^D4173 -> local check (column weight 33, 9 records)
+  recovered 3 genuine local check(s); dropping 18 observable-coset detector(s)
+  wrote xmerge_d9_bell_fixed.stim: 4206 detectors, 3 observables
+  noiseless determinism (no gauge)              : PASS
+  rank(det)=4206/4206  rank(det+obs)=4209  deterministic dim=4225  slack=16
+  observables independent of detector span      : PASS
+  decompose_errors=True (MWPM-ready)            : PASS (86388 errors)
+  distance: shortest_graphlike=6  search_for_undetectable=skipped
+  (pass --hyperedge for the undetectable-error cross-check; it is memory-hungry and OOMs at d7+)

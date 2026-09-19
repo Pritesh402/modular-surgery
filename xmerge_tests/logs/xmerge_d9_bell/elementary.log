@@ -1,0 +1,31 @@
+=== elementary_basis.py  xmerge_d9_bell_graphlike.stim -> xmerge_d9_bell_graphlike_elementary.stim ===
+  detectors 4224   measurements 5001
+  BEFORE record-weight hist : {1: 193, 2: 3596, 3: 97, 4: 118, 5: 181, 6: 11, 7: 1, 9: 2, 10: 4, 11: 1, 12: 6, 13: 2, 14: 2, 17: 2, 18: 2, 20: 1, 25: 2, 42: 1, 45: 1, 50: 1}
+  BEFORE error-degree hist  : {1: 919, 2: 19874, 3: 10038, 4: 42861, 5: 5237, 6: 2181, 7: 35}
+  DEM error mechanisms      : 81145
+  pass 1: 260 reductions, max column weight 2305
+  pass 2: 17 reductions, max column weight 2305
+  pass 3: 5 reductions, max column weight 2305
+  pass 4: 0 reductions, max column weight 2305
+  AFTER  record-weight hist : {1: 193, 2: 3596, 3: 97, 4: 118, 5: 183, 6: 11, 7: 1, 11: 2, 12: 8, 13: 1, 14: 3, 15: 1, 16: 3, 17: 1, 18: 1, 19: 1, 23: 1, 51: 1, 57: 1, 65: 1}
+  AFTER  error-degree hist  : {1: 939, 2: 20450, 3: 10587, 4: 44258, 5: 4570, 6: 292, 7: 38, 8: 9, 9: 2}
+  detectors rewritten       : 22
+  span preserved (rank 4224/4224/4224)   : PASS
+     -> an error is undetectable in the NEW annotation iff it was
+        undetectable in the OLD one; the TRUE distance is unchanged
+        by construction.  Any change in shortest_graphlike_error is a
+        change in how tightly the graphlike search can BOUND it.
+  observable outside span              : PASS
+  detectors deterministic (noiseless)  : PASS
+  strict DEM (no gauge detectors)      : PASS
+  shortest_graphlike_error = 9  -- fault path:
+    [0] tick=1     X_ERROR      X(q212 @(12.0, 11.0))
+    [1] tick=1     X_ERROR      X(q271 @(13.0, 12.0))
+    [2] tick=1     X_ERROR      X(q330 @(14.0, 13.0))
+    [3] tick=1     X_ERROR      X(q389 @(15.0, 14.0))
+    [4] tick=1     X_ERROR      X(q448 @(16.0, 15.0))
+    [5] tick=1     X_ERROR      X(q507 @(17.0, 16.0))
+    [6] tick=1     X_ERROR      X(q566 @(18.0, 17.0))
+    [7] tick=1     X_ERROR      X(q625 @(19.0, 18.0))
+    [8] tick=1     X_ERROR      X(q684 @(20.0, 19.0))
+  VERDICT: ELEMENTARY + VALID

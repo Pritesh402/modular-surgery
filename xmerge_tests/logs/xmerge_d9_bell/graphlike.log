@@ -1,0 +1,7 @@
+=== graphlike_basis.py  .\xmerge_d9_bell_annotated.stim -> xmerge_d9_bell_graphlike.stim ===
+  detectors 4377  single-Pauli faults 22297  start max-degree 21
+  after reduction: single-Pauli max-degree 7
+  detectors kept 4224   fault-redundant dropped 153
+  (validation skipped: --no-validate; run xmerge_diagnose.py instead)
+  wrote xmerge_d9_bell_graphlike.stim
+  VERDICT: GRAPHLIKE + VALID
