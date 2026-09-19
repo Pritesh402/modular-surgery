@@ -480,7 +480,7 @@ SERIES = [
     },
 ]
 
-PLOT_TITLE = r"Pauli-XX measurement across different QPUs ($d=9$)"
+PLOT_TITLE = r"Pauli-XX measurement across different QPUs ($d=3$)"
 X_LABEL = "Inter-QPU link error rate"
 Y_LABEL = "Logical error rate per shot"
 
