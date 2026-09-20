@@ -107,9 +107,9 @@ def make_override_pairs(number_string):
 # override_pairs_d7_alternating_LS_on_different_QPU = make_override_pairs("449 442 450 443 451 444 452 445 453 446 454 447 455 448")
 
 # xmerge left, d7
-override_pairs_d3_bell_LS_on_different_QPU = make_override_pairs("412 438 438 439 413 439 439 449 414 440 440 450 440 441 415 441 441 451 416 442 442 452 442 443 417 443 443 453  418 444 444 454 444 445 419 445 445 455 431 446 432 447 433 448")
-override_pairs_d3_interleaving_LS_on_different_QPU = make_override_pairs("455 448 456 449 457 450 458 451 459 452 460 453 461 454 462")
-override_pairs_d3_alternating_LS_on_different_QPU = make_override_pairs("449 442 450 443 451 444 452 445 453 446 454 447 455 448")
+override_pairs_d3_bell_LS_on_different_QPU = make_override_pairs("79 90 91 79 91 91 95 87 94 80 92 92 96 92 93 81 93 93 97")
+override_pairs_d3_interleaving_LS_on_different_QPU = make_override_pairs("101 98 102 99 103 100 104")
+override_pairs_d3_alternating_LS_on_different_QPU = make_override_pairs("89 92 90 93 91 94")
 
 def make_override_edges(override_pairs_raw):
     override_edges = set()
