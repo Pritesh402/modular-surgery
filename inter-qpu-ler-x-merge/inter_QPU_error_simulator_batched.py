@@ -102,9 +102,9 @@ def make_override_pairs(number_string):
 # override_pairs_d5_alternating_LS_on_different_QPU = make_override_pairs("406 392 407 393 408 394 409 395 410 396 411 397 412 398 413")
 
 # xmerge left, d7
-override_pairs_d7_bell_LS_on_different_QPU = make_override_pairs("290 300 300 314 300 301 291 301 301 315 292 302 302 316 302 303 293 303 303 317 294 304 304 318 304 305 295 305 305 319 296 306 306 320 307 306 307 321 297 308 298 309 299 310")
-override_pairs_d7_interleaving_LS_on_different_QPU = make_override_pairs("406 392 407 393 408 394 409 395 410 396 411 397 412 398 413")
-override_pairs_d7_alternating_LS_on_different_QPU = make_override_pairs("406 392 407 393 408 394 409 395 410 396 411 397 412 398 413")
+override_pairs_d7_bell_LS_on_different_QPU = make_override_pairs("412 438 438 439 413 439 439 449 414 440 440 450 440 441 415 441 441 451 416 442 442 452 442 443 417 443 443 453  418 444 444 454 444 445 419 445 445 455 431 446 432 447 433 448")
+override_pairs_d7_interleaving_LS_on_different_QPU = make_override_pairs("455 448 456 449 457 450 458 451 459 452 460 453 461 454 462")
+override_pairs_d7_alternating_LS_on_different_QPU = make_override_pairs("449 442 450 443 451 444 452 445 453 446 454 447 455 448")
 
 def make_override_edges(override_pairs_raw):
     override_edges = set()
@@ -567,7 +567,7 @@ SERIES = [
     },
 ]
 
-PLOT_TITLE = r"Cross shaped junnction merge across different QPUs ($d=7$)"
+PLOT_TITLE = r"Cross shaped spatial junction merge across different QPUs ($d=7$)"
 X_LABEL = "Inter-QPU link error rate"
 Y_LABEL = "Logical error rate per shot"
 
